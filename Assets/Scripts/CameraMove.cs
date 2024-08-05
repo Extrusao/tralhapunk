@@ -1,47 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    private Vector3 Origin;
-    private Vector3 Difference;
-    private Vector3 ResetCamera;
 
-    private bool drag = false;
-
-    
-
-    private void Start()
+    private float velocidade = 200f;
+    private void Update()
     {
-        ResetCamera = Camera.main.transform.position;
-    }
+        Vector3 pos = transform.position;
 
-
-    private void LateUpdate()
-    {
-        if (Input.GetMouseButton(1))
-        {
-            Difference = (Camera.main.ScreenToWorldPoint(Input.mousePosition)) - Camera.main.transform.position;
-            if(drag == false)
-            {
-                drag = true;
-                Origin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            }
-
-        }
-        else
-        {
-            drag = false;
+        if(Input.GetMouseButtonDown(1)){
+            pos.z += velocidade * Time.deltaTime;
         }
 
-        if (drag)
-        {
-            Camera.main.transform.position = Origin - Difference * 0.5f;
-        }
-
-        if (Input.GetMouseButton(2))
-            Camera.main.transform.position = ResetCamera;
-
+        transform.position = pos;
     }
 }
