@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1935739944150472429
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Tiete
+  m_Name: M_NuvensEfeito
   m_Shader: {fileID: -6465566751694194690, guid: 71feb50ae1d83aa4e9d1e4d474de822d,
     type: 3}
   m_Parent: {fileID: 0}
@@ -37,18 +24,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Ondas:
-        m_Texture: {fileID: 2800000, guid: 335859bce1ee2bc49aae3358a5d6b4a4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_00f142e19ecb4a2a966c21e5e1d21e02_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: e0cad178c2c2db0419546956abde88ba, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_47346068393240a4a05ad902df32f944_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 335859bce1ee2bc49aae3358a5d6b4a4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_6efc0b2a8e83430689f87157e36844d2_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 8c5e920c4ce6e9e4f9e6b8fecdd534e4, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -69,10 +44,18 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ScrollSpeed: 0.2
-    m_Colors:
-    - _Tiling: {r: 6, g: 6, b: 0, a: 0}
-    - _TilingOndaMaior: {r: 3, g: 3, b: 0, a: 0}
-    - _TilingOndaMenor: {r: 5, g: 5, b: 0, a: 0}
-    - _TilingOndaPequena: {r: 5, g: 5, b: 0, a: 0}
+    m_Colors: []
   m_BuildTextureStacks: []
+--- !u!114 &1207655044534086100
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
