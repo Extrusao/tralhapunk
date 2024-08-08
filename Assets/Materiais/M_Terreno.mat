@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Blocos
-  m_Shader: {fileID: -6465566751694194690, guid: f393324b6ad3a21428d7305d34c73383,
+  m_Name: M_Terreno
+  m_Shader: {fileID: -6465566751694194690, guid: 771b416565dc32146bc1d38984583e24,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Textura:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 91ec21ec808f9804fb2d33ec4dc57ee6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -42,18 +42,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BrilhoAdicional: 0.47
+    - _BrilhoAdicional: 2.45
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Roughness: 0
-    - _Sombra: 0.49
-    - _SombraMaximo: 0.88
-    - _SombraMinimo: 0.9
+    - _Roughness: -1.46
+    - _Sombra: -0.21
+    - _SombraMaximo: 1.93
+    - _SombraMinimo: 4.97
     m_Colors:
-    - _CorBloco: {r: 0, g: 0, b: 0, a: 0}
+    - _BrilhoAdicional: {r: 1, g: 1, b: 1, a: 0}
     - _CorObjeto: {r: 1, g: 1, b: 1, a: 0}
+    - _Tiling: {r: 4, g: 4, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &6778801117094679069
+--- !u!114 &3763749064011797283
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

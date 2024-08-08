@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Blocos
-  m_Shader: {fileID: -6465566751694194690, guid: f393324b6ad3a21428d7305d34c73383,
+  m_Name: M_OCa 1
+  m_Shader: {fileID: -6465566751694194690, guid: 771b416565dc32146bc1d38984583e24,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,8 +24,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Textura:
+    - _TexturaObjeto:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexturaSombra:
+        m_Texture: {fileID: 2800000, guid: c1fcaa231c5faa147b392fffb7052f4a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexturaSombraPonta:
+        m_Texture: {fileID: 2800000, guid: eb580bce43383ad40b82230d9c668ddc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -42,18 +50,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BrilhoAdicional: 0.47
+    - _AlturaDaPontaDaSombra: 0.35
+    - _EspessuraContorno: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Roughness: 0
-    - _Sombra: 0.49
-    - _SombraMaximo: 0.88
-    - _SombraMinimo: 0.9
+    - _TamanhoSombraMediana: 0.3
+    - _TamanhoSombraPesada: 0.12
     m_Colors:
-    - _CorBloco: {r: 0, g: 0, b: 0, a: 0}
-    - _CorObjeto: {r: 1, g: 1, b: 1, a: 0}
+    - _CorNegativoSombra: {r: 0, g: 0, b: 0, a: 0}
+    - _CorObjeto: {r: 0.8301887, g: 0.32502666, b: 0.32502666, a: 0}
+    - _TilingSombraMediana: {r: 20, g: 20, b: 0, a: 0}
+    - _TilingSombraPesada: {r: 40, g: 40, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &6778801117094679069
+--- !u!114 &5939361121315754743
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
